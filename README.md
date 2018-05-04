@@ -39,4 +39,7 @@ Twitter dataset: using Twitter API and TweePy library, searching by query “Urb
 ### Definition of average similarity for Yelp Users
 <div align=center><img height ="40"src="images/equation1.png"/></div>
 where U is the set of distinct restaurants one Yelp user reviewed, and V is the set of distinct restaurants another Yelp user reviewed. U ∩ V is the number of same restaurants a pair reviewed, and U ∩ V is the total number of distinct restaurants they reviewed.
-
+### Definition of average similarity for Twitter Users
+<div align=center><img height ="100"src="images/equation2.png"/></div>
+Where U is the set of friends one Twitter user follows, and V is the set of friends one Twitter another user follows. U ∩ V is the intersection of friends of a pair of users, and U ∪ V is the union of friends of a pair of users. For accurate calculation, we need to remove any of the two users form the other’s friend list. So for mutual friends, the denominator of the union need to minus 2, and for a pair with one-direction friendship, the denominator of the union must to minus
+1.
