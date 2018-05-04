@@ -32,6 +32,7 @@ Twitter dataset: using Twitter API and TweePy library, searching by query “Urb
 <p align="center">Fig. 2. Illustration of Twitter data preprocessing</p>
 ## Methods
 ### Definition of average similarity for Yelp Users
+
 <div align=center><img height ="40"src="images/equation1.png"/></div>
 where U is the set of distinct restaurants one Yelp user reviewed, and V is the set of distinct restaurants another Yelp user reviewed. U ∩ V is the number of same restaurants a pair reviewed, and U ∩ V is the total number of distinct restaurants they reviewed.
 
