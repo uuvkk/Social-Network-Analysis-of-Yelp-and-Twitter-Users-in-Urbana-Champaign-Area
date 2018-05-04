@@ -1,4 +1,4 @@
-# Social Network Analysis of Yelp and Twi er Users in Urbana-Champaign Area
+# Social Network Analysis of Yelp and Twitter Users in Urbana-Champaign Area
 [Dandan Tao](https://github.com/DandanTao), Department of Food Science and Human Nutrition, University of Illinois at Urbana-Champaign
 
 [Jiazheng Li](https://github.com/uuvkk), School of Information Sciences,  University of Illinois at Urbana-Champaign
@@ -62,3 +62,8 @@ Firstly, we analyzed the friendship network where node is Yelp user and edge is 
 Secondly, we constructed a co-reviewing network where node is Yelp user and edge is True if two nodes reviewed at least a threshold number (n) of same restaurants. All nodes are from the biggest component found in the friendship network. To select the best parameter (n) for network analysis, we monitored the changes of network size and density along with di erent thresholds (see Figure 4).
 <div align=center><img height ="300"src="images/figure_4a.png"/><img height ="300"src="images/figure_4b.png"/></div>
 <p align="center">Fig. 4. Size (left) and density (right) of networks with different thresholds</p>
+A threshold of 20 (two nodes have link if they have at least 20 same restaurants reviewed) because the network under this threshold has stable size and density. There are 28 nodes in this network, the top 10 nodes of di erent centrality measures and clustering coe cient are listed (see Table 1). Node 20 is the most central node in this network. Then the network was visualized with Gephi and grouped with its modularity function (see Figure 5). 3 groups were detected based on the network structure, in which nodes in the same color indicate they are in the same group.
+<div align=center><img height ="800"src="images/table1.png"/></div>
+<div align=center><img height ="500"src="images/figure_5.png"/></div>
+<p align="center">Fig. 5. Grouping of co-reviewing network using Gephi</p>
+
