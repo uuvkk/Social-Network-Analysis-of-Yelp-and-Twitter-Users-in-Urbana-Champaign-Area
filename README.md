@@ -4,15 +4,12 @@
 [Jiazheng Li](https://github.com/uuvkk), School of Information Sciences,  University of Illinois at Urbana-Champaign
 
 ## Abstract
-
 Social similarity is critical in the formation of friendship. The purpose of this project is to test the well-established sociological hypothesis that people tend to be similar to their friends on social media. Yelp and Twitter were chosen as platforms to collect data for network analysis. Users’ following information on Twitter and reviewing profile on Yelp are used as main characteristics for calculating similarity. Group detection was conducted on Gephi using the Louvain method. Network properties of people grouped with different similarities were compared and the impact of node property on graph property were discussed. It was found that the similarity of users who are friends are much higher than users who are not friends on both Twitter and Yelp. Interest has significant impact on network properties.
 
 ## Keywords
-
 Network analysis; Social media; Grouping; Node similarity
 
 ## Introduction
-
 Similarity in network analysis occurs when two nodes fall in the same group. From sociological perspective, people tend to be more similar to their friends than to people who are not their friends [2]. With massive data generated online every day, social media has been employed as a useful tool to conduct varieties of researches. Analysis of similarity helps us to detect groups with speci c interests, which is bene cial for recommendation, advertising and so on [9, 13].
 
 Yelp is one of the most popular online review websites in the world. Most of the previous studies on Yelp dataset are based on semantic analysis of Yelp reviews for the purpose of identifying the impact of fake reviews [6], analyzing consumer dietary habits [1], and predicting user attributes [8]. A few researches have been focused on the network aspect of Yelp dataset. Gender impact on Yelp friendship network was investigated based on network analysis method triangle motifs identi cation [12]. Personalized recommender systems were proposed based on relationship heterogeneity of the information network [9, 13].
@@ -24,15 +21,12 @@ Though Facebook and Twitter are the two dominant tools in the  eld of social med
 The goal of this project is to test the hypothesis on virtual relationships namely friendship on Yelp and Twitter. In speci c, three network-based research questions are raised: 1) how to determine similarity; 2) how to interpret grouping results based on similarity; and 3) how does similarity in uence friendship network? To answer these questions, methods including similarity computation, grouping and metrics analysis will be employed to gain insights of node similarity and the in uence on graph property.
 
 ## Data
-
 ### Data collection
-
 Yelp data was extracted from the [Yelp Dataset Challenge 2018](https://www.yelp.com/dataset/challenge), which includes information about local businesses in 11 metropolitan areas across 4 countries. For local purpose, location was used as the  rst-layer criteria for data extraction in which only “Urbana” or “Champaign” city was included for analysis. After data extraction, the useful data includes 8561 users in total. As Yelp is a local business platform and these people have reviewed restaurants in Urbana- Champaign (UC), we are assuming these people live in this speci c region. However, visitors might also review local restaurants. In addition, Yelp review data is just an estimate of people’s dining experiences and could be biased since not all people who dine out would write reviews. Therefore, the dataset we extracted would only be a rough estimation of eating behaviors of UC residencies in real life.
 
 Twitter data were collected by [Twitter API](https://developer.twitter.com) and [TweePy library](https://github.com/tweepy). When searching for users, we use the query “Urbana Champaign” to retrieve the users. We obtain 1020 users, after  ltering and pre-processing, we  nally determined use 108 users and their information to generate networks and conduct analysis. The relationships of Twitter users are directed: if you follow a person, you are called a “follower” of this person, and this person is called your “friend”. The concept of our analysis is  rstly built the friendship network which is directed, then build the common interest network which is undirected, and  nally compute and compare the average similarity values for three di erent types of user pairs: mutual friends, single friend and non-friend relationships. We want to know, whether Twitter users in UC area tend to share more interests when they are friends than not.
 
 ### Data preprocessing
-
 Yelp dataset: friendship information of Yelp reviewers for restaurants in Urbana-Champaign was extracted as shown below (see Figure 1). Firstly, business data was  ltered by location, and only businesses in Urbana-Champaign area were extracted. Then data was further  ltered by category and only “Restaurants” are extracted. Secondly, review dataset was  ltered with the business ids from the last extracted restaurant dataset to extract the user ids. Lastly, user information was extracted from user dataset by  ltering the user ids, and friendship information was acquired by extracting its “friend” feature. After these preprocessing, adjacency list of friendship was constructed for analysis. Here, it is reminded that the “friend” feature is mutual and un-directed. If two people are friends on Yelp, their reviews will be presented on top.
 <div align=center><img height ="300"src="images/figure_1.png"/></div>
 <p align="center">Fig. 1. Illustration of Yelp data preprocessing</p>
@@ -42,9 +36,7 @@ Twitter dataset: using Twitter API and TweePy library, searching by query “Urb
 <p align="center">Fig. 2. Illustration of Twitter data preprocessing</p>
 
 ## Methods
-
 ### Definition of average similarity for Yelp Users
-
 <div align=center><img height ="40"src="images/equation1.png"/></div>
 where U is the set of distinct restaurants one Yelp user reviewed, and V is the set of distinct restaurants another Yelp user reviewed. U ∩ V is the number of same restaurants a pair reviewed, and U ∩ V is the total number of distinct restaurants they reviewed.
 
