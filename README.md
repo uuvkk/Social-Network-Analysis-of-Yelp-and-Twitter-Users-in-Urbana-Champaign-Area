@@ -25,13 +25,13 @@ Twitter data were collected by [Twitter API](https://developer.twitter.com) and 
 ### Data preprocessing
 Yelp dataset: friendship information of Yelp reviewers for restaurants in Urbana-Champaign was extracted as shown below (see Figure 1). Firstly, business data was  ltered by location, and only businesses in Urbana-Champaign area were extracted. Then data was further  ltered by category and only “Restaurants” are extracted. Secondly, review dataset was  ltered with the business ids from the last extracted restaurant dataset to extract the user ids. Lastly, user information was extracted from user dataset by  ltering the user ids, and friendship information was acquired by extracting its “friend” feature. After these preprocessing, adjacency list of friendship was constructed for analysis. Here, it is reminded that the “friend” feature is mutual and un-directed. If two people are friends on Yelp, their reviews will be presented on top.
 <div align=center><img height ="300"src="images/figure_1.png"/></div>
-<p align="center">HelloWorld</p>
+<p align="center">Fig. 1. Illustration of Yelp data preprocessing</p>
 Twitter dataset: using Twitter API and TweePy library, searching by query “Urbana Champaign”, we have found 1020 users. However, most of them are o cial public account for university institutes and organizations, like the screen names: “CEEatIllinois” (Department of Civil and Environmental Engineering, University of Illinois at Urbana-Champaign),
 “IlliniVBall” (University of Illinois Volleyball team), and “uo admissions” (University of Illinois at Urbana-Champaign’s O ce of Undergraduate Admissions). The get_friends_ids Twitter API can give a result of 5000 ids in one page, so for better processing, we  lter the users whose numbers of friends are larger than 5000; and the number of users left is 1017. Another problem of the acquired data is some of users overlap due to the feature of Twitter API. Using Python set data structure, we could easily  nd the unique users and the number of users becomes 287. And then we left the users that are individual user instead of public accounts, by which we have 114 users. We also get all the friends ids of the 114 users through the API, however, we found that some users set their account as private, so we remove them. Finally, we have 108 individual users and their information, and the ids of their friends. The process is shown in Figure 2.
-<div align=center>Fig. 1. Illustration of Yelp data preprocessing<img height ="260"src="images/figure_2.png"/></div>
+<div align=center><img height ="260"src="images/figure_2.png"/></div>
 <p align="center">Fig. 2. Illustration of Twitter data preprocessing</p>
 ## Methods
 ### Definition of average similarity for Yelp Users
-<div align=center><img height ="20"src="images/equation1.png"/></div>
+<div align=center><img height ="40"src="images/equation1.png"/></div>
 where U is the set of distinct restaurants one Yelp user reviewed, and V is the set of distinct restaurants another Yelp user reviewed. U ∩ V is the number of same restaurants a pair reviewed, and U ∩ V is the total number of distinct restaurants they reviewed.
 
