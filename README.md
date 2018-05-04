@@ -39,7 +39,23 @@ Twitter dataset: using Twitter API and TweePy library, searching by query “Urb
 ### Definition of average similarity for Yelp Users
 <div align=center><img height ="40"src="images/equation1.png"/></div>
 where U is the set of distinct restaurants one Yelp user reviewed, and V is the set of distinct restaurants another Yelp user reviewed. U ∩ V is the number of same restaurants a pair reviewed, and U ∩ V is the total number of distinct restaurants they reviewed.
+
 ### Definition of average similarity for Twitter Users
 <div align=center><img height ="100"src="images/equation2.png"/></div>
 Where U is the set of friends one Twitter user follows, and V is the set of friends one Twitter another user follows. U ∩ V is the intersection of friends of a pair of users, and U ∪ V is the union of friends of a pair of users. For accurate calculation, we need to remove any of the two users form the other’s friend list. So for mutual friends, the denominator of the union need to minus 2, and for a pair with one-direction friendship, the denominator of the union must to minus
 1.
+
+### Definition of western restaurants and eastern restaurants in Yelp data
+In the Yelp business dataset, each restaurant has a list of categories, from which we refer restaurants in categories of American, Mexican, or Italian as western restaurants and restaurants in categories of Chinese, Thai, Japanese, Korean, or Indian as eastern restaurants. The total number of each type of restaurants in users’ reviewing history will be recorded and the sum of western/eastern restaurants will be calculated.
+
+### Network metrics
+Node metrics to measure include degree centrality, betweenness centrality, closeness centrality, eigenvector centrality and clustering coe cient. Since the network are undirected, there is no in and out centrality measures. Graph metrics to measure include size, density, diameter, average degree and average path length.
+
+### Visualization
+Python (3.5.4) was used as the programming language to process the data and conduct network analysis. Pandas, NumPy and NetworkX were used of the main libraries for data representation, and matplotlib was used as the main library for drawling graphs. Gephi (0.9.2) was used for visualizing and grouping purposes.
+
+## Results
+### Yelp dataset analysis
+Firstly, we analyzed the friendship network where node is Yelp user and edge is True if two nodes are friends. The total number of nodes in our dataset is 8561. In the friendship network, 144 components were found, for simplicity only the biggest component will be considered for analysis in the following studies. The number of nodes in this component is 2454. The network and its degree distribution are shown in Figure 3. A power-law is observed from the distribution, where most people only have one connection while only a few people have very high degree. The friendship matrix was saved as attributes for further analysis.
+<div align=center><img height ="260"src="images/figure_3a.png"/><img height ="260"src="images/figure_3b.png"/></div>
+<p align="center">Fig. 3. Biggest component in the friendship network (le ) and its degree distribution (right)</p>
