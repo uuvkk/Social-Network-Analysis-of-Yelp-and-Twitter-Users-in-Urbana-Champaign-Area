@@ -57,5 +57,8 @@ Python (3.5.4) was used as the programming language to process the data and cond
 ## Results
 ### Yelp dataset analysis
 Firstly, we analyzed the friendship network where node is Yelp user and edge is True if two nodes are friends. The total number of nodes in our dataset is 8561. In the friendship network, 144 components were found, for simplicity only the biggest component will be considered for analysis in the following studies. The number of nodes in this component is 2454. The network and its degree distribution are shown in Figure 3. A power-law is observed from the distribution, where most people only have one connection while only a few people have very high degree. The friendship matrix was saved as attributes for further analysis.
-<div align=center><img height ="260"src="images/figure_3a.png"/><img height ="260"src="images/figure_3b.png"/></div>
-<p align="center">Fig. 3. Biggest component in the friendship network (le ) and its degree distribution (right)</p>
+<div align=center><img height ="300"src="images/figure_3a.png"/><img height ="300"src="images/figure_3b.png"/></div>
+<p align="center">Fig. 3. Biggest component in the friendship network (left) and its degree distribution (right)</p>
+Secondly, we constructed a co-reviewing network where node is Yelp user and edge is True if two nodes reviewed at least a threshold number (n) of same restaurants. All nodes are from the biggest component found in the friendship network. To select the best parameter (n) for network analysis, we monitored the changes of network size and density along with di erent thresholds (see Figure 4).
+<div align=center><img height ="300"src="images/figure_4a.png"/><img height ="300"src="images/figure_4b.png"/></div>
+<p align="center">Fig. 4. Size (left) and density (right) of networks with different thresholds</p>
