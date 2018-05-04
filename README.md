@@ -63,7 +63,7 @@ Secondly, we constructed a co-reviewing network where node is Yelp user and edge
 <div align=center><img height ="300"src="images/figure_4a.png"/><img height ="300"src="images/figure_4b.png"/></div>
 <p align="center">Fig. 4. Size (left) and density (right) of networks with different thresholds</p>
 A threshold of 20 (two nodes have link if they have at least 20 same restaurants reviewed) because the network under this threshold has stable size and density. There are 28 nodes in this network, the top 10 nodes of di erent centrality measures and clustering coe cient are listed (see Table 1). Node 20 is the most central node in this network. Then the network was visualized with Gephi and grouped with its modularity function (see Figure 5). 3 groups were detected based on the network structure, in which nodes in the same color indicate they are in the same group.
-<div align=center><img height ="800"src="images/table1.png"/></div>
-<div align=center><img height ="500"src="images/figure_5.png"/></div>
+<div align=center><img "src="images/table1.png"/></div>
+<div align=center><img height ="450"src="images/figure_5.png"/></div>
 <p align="center">Fig. 5. Grouping of co-reviewing network using Gephi</p>
 
