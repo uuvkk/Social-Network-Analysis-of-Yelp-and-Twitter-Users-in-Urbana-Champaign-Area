@@ -94,7 +94,7 @@ And then, for the 108 users, we set the threshold as 30: if two users follow mor
 For this extracted network, we also compute its centrality measures and clustering coe cients, and those for the top 10 nodes in Table 5. We could see that in terms of betweenness, degree and closeness, the center of the network is the user “DrARRob”, a PhD candidate who is not active in tweeting, but has a wide range of interests, indicated by that she is following more than 2,000 users. For eigenvector, the center is “noshfolio”, an active photographer who loves food and often post beautiful photos of foods on Twitter, which makes him famous in this network. “geocory” also plays an important role in this network, he is a research assistant professor form the School of Earth, Society & Environment at University of Illinois at Urbana-Champaign. This shows the academic interests in the community in this area. The people with high clustering coe cient include football player, economist, mobile engineer and new reporter. This indicates that in terms of interests, in UC area, people tend to have various interests and could be followed by di erent people with multiple backgrounds, showing diversity. It is also worth mentioning, sorority members are also considerable in the common interest network, showing how active they are in social media in this area.
 <div align=center><img height ="150"src="images/table5.png"/></div>
 Based on modularity class grouping using Gephi, we found 7 groups in this network (see Figure 13). It is obvious that the nodes at the boundary of each group have higher degrees than other nodes in this group, which reflects the fact: people with various interests are  exible to make friends with a wide range of people and join diverse groups.
-<div align=center><img height ="500"src="images/figure_13.png"/></div>
+<div align=center><img height ="400"src="images/figure_13.png"/></div>
 <p align="center">Fig. 13. Modularity Grouping Result using Gephi</p>
 If two Twitter users are friends, do they share more interests than the non-friend users? In this part, we calculate the average similarity for the three kinds of Twitter users we mentioned in the previous part respectively. The number of mutual friends pairs in the 108 users is 41, the number of one-friend pairs in the 108 users is 31, and the number of non-friend pairs in the 108 users is 5705. The data is imbalanced, but if we use the average similarity, data imbalance is no more a problem. From the numbers calculated in Table 5, we could see people that are mutual friends share more interests than those have single friendship, and much more than those have no friendship at all.
 
@@ -109,15 +109,27 @@ The authors would like to thank Shubhanshu Mishra and Dr. Jana Diesner for provi
 
 ## REFERENCES
 [1] Weranuj Ariyasriwatana, Wayne Buente, Melissa Oshiro, and Dennis Streveler. 2014. Categorizing health-related cues to action: using Yelp reviews of restaurants in Hawaii. New Review of Hypermedia and Multimedia 20, 4 (2014), 317–340.
+
 [2] Scott L Feld. 1981. The focused organization of social ties. American journal of sociology 86, 5 (1981), 1015–1035.
+
 [3] Wei Feng, Chao Zhang, Wei Zhang, Jiawei Han, Jianyong Wang, Charu Aggarwal, and Jianbin Huang. 2015. STREAMCUBE: hierarchical spatio- temporal hashtag clustering for event exploration over the twitter stream. In Data Engineering (ICDE), 2015 IEEE 31st International Conference on. IEEE, 1561–1572.
+
 [4] Itai Himelboim and Jeong Yeob Han. 2014. Cancer talk on twitter: community structure and information sources in breast and prostate cancer social networks. Journal of health communication 19, 2 (2014), 210–225.
+
 [5]Jie Lin and Robert G Cromley. 2018. Inferring the home locations of Twitter users based on the spatio temporal clustering of Twitter data. Transactions in GIS 22, 1 (2018), 82–97.
+
 [6] Michael Luca and Georgios Zervas. 2016. Fake it till you make it: Reputation, competition, and Yelp review fraud. Management Science 62, 12 (2016), 3412–3427.
+
 [7] Sudip Mittal, Prajit Kumar Das, Varish Mulwad, Anupam Joshi, and Tim Finin. 2016. Cybertwitter: Using twitter to generate alerts for cybersecurity threats and vulnerabilities. In Advances in Social Networks Analysis and Mining (ASONAM), 2016 IEEE/ACM International Conference on. IEEE, 860–867.
+
 [8] Sravana Reddy and Kevin Knight. 2016. Obfuscating gender in social media writing. In Proceedings of the First Workshop on NLP and Computational Social Science. 17–26.
+
 [9] Young-Duk Seo, Young-Gab Kim, Euijong Lee, and Doo-Kwon Baik. 2017. Personalized recommender system based on friendship strength in social network services. Expert Systems with Applications 69 (2017), 135–148.
+
 [10] Alex Hai Wang. 2010. Don’t follow me: Spam detection in twitter. In Security and cryptography (SECRYPT), proceedings of the 2010 international conference on. IEEE, 1–10.
+
 [11] Hao Wang, Dogan Can, Abe Kazemzadeh, François Bar, and Shrikanth Narayanan. 2012. A system for real-time twitter sentiment analysis of 2012 us presidential election cycle. In Proceedings of the ACL 2012 System Demonstrations. Association for Computational Linguistics, 115–120.
+
 [12] Shanqing Yu, Jinhuan Wang, Deng Zhang, and Beilun Shen. 2017. Analysis of gender motifs in online Yelp friendship network. In Complex Systems and Networks (IWCSN), 2017 International Workshop on. IEEE, 279–283.
+
 [13] Xiao Yu, Xiang Ren, Yizhou Sun, Quanquan Gu, Bradley Sturt, Urvashi Khandelwal, Brandon Norick, and Jiawei Han. 2014. Personalized entity recommendation: A heterogeneous information network approach. In Proceedings of the 7th ACM international conference on Web search and data mining. ACM, 283–292.
