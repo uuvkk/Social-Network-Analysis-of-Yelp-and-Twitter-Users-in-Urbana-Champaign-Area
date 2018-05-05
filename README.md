@@ -101,7 +101,7 @@ If two Twitter users are friends, do they share more interests than the non-frie
 ## Limitations
 Due to the limitation of time, in Yelp data, this work only considered type of restaurants as one variable to conduct similarity analysis, and in Twitter data, only common friends are considered to calculate the similarity. However, there are many other features in Yelp and Twitter dataset valuable to be tested. As this is a social media study, the result might not represent the real life situation for multiple possible reasons. For instance, not all people write reviews after dining in a restaurant; “friend” on social media are most often not real friends and may not accurately reflect people's real interests. For better understanding of why people are grouped together, more factors are needed to be considered in similarity analysis.
 
-## A CODE
+## CODE
 Code and data could be found here: https://github.com/uuvkk/Twitter-and-Yelp-Network-Analysis. Due to the size of Yelp Dataset, we only upload some processed data. For your interest of analzying this part of data, we recommend you download the raw data here https://www.yelp.com/dataset/challenge.
 
 ## Ackonwledgments
