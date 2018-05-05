@@ -80,8 +80,8 @@ Based on previous findings, we calculated the proportion of western restaurants 
 
 ### Twitter dataset analysis
 Firstly, we analyzed the friendship network where one node is a Twitter user and there is an edge form node A to node B if A follows B. The total number of nodes in our Twitter dataset is 108. Removing the isolates, the structure of the friendship network and its according degree distribution is shown in Figure 9 where the distribution also gives a power-law observation. In the directed friendship network, 30 strong components were found, and 5 weak components were found. Figure 10 shows the largest strong component and weak component. But here we only analyze the largest strongly connected component because it can be transformed to an undirected graph and is more representative and informative. Di erent metrics including centralities and clustering coe cient for the top 5 users in the largest strongly connected component are given in Table 4. We can see that the most important and active users in this network are “mstamarrian” and “ambreaxo”. “mstamarrian” is an online girl celebrity who has tweeted more than 45.3K times; and “ambreaxo” is also a girl who is in Gamma and has tweeted more than 20.4K times. It is very interesting that sororities play an important role in this community we have found, and we can conclude that sorority culture is very active on Twitter in Urbana-Champaign area.
-<div align=center><img height ="300"src="images/figure_9a.png"/><img height ="300"src="images/figure_9b.png"/></div>
+<div align=center><img height ="300"src="images/figure_9a.png"/>    <img height ="300"src="images/figure_9b.png"/></div>
 <p align="center">Fig. 9. Directed friendship network for Twi er users and degree distribution</p>
-<div align=center><img height ="300"src="images/figure_10a.png"/><img height ="300"src="images/figure_10b.png"/></div>
+<div align=center><img height ="300"src="images/figure_10a.png"/>    <img height ="300"src="images/figure_10b.png"/></div>
 <p align="center">Fig. 10. Largest strongly connected component (le ) and weakly connected component</p>
 <div align=center><img src="images/table4.png"/></div>
